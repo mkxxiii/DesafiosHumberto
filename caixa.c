@@ -82,14 +82,21 @@ int main(){
                         if(ChamarSenha(&filaNormal) == 0)
                             printf("Não ha clientes disponiveis no momento!");
                     }
+                    break;
                 case 4:
                     if(ChamarSenha(&filaNormal) == 0){
                         if(ChamarSenha(&filaPriori) == 0)
                             printf("Não ha clientes disponiveis no momento!");
                     }
+                    break;
                 case 5:
                     escape = 1;
+                    break;
+                default:
+                    printf("Opcao Invalida!");
+                    break;
             }
+            system("PAUSE");
         }
         return 0;
 }
