@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Definições Sistema
+//DefiniÃ§Ãµes Sistema
 #define SIZE 101
 #define NULL_INT -999
 
@@ -12,7 +12,7 @@ struct GeradorSenha{
     char sufixo;
 };
 
-//Funções
+//FunÃ§Ãµes
 struct GeradorSenha startStrc(char sufix){
     struct GeradorSenha obj;
     obj.posCaixa = 0;
@@ -80,13 +80,15 @@ int main(){
                 case 3:
                     if(ChamarSenha(&filaPriori) == 0){
                         if(ChamarSenha(&filaNormal) == 0)
-                            printf("Não ha clientes disponiveis no momento!");
+                            printf("NÃ£o ha clientes disponiveis no momento!");
                     }
                 case 4:
                     if(ChamarSenha(&filaNormal) == 0){
                         if(ChamarSenha(&filaPriori) == 0)
-                            printf("Não ha clientes disponiveis no momento!");
+                            printf("NÃ£o ha clientes disponiveis no momento!");
                     }
+                case 5:
+                    escape = 1;
             }
         }
         return 0;
